@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tarea9y10">
+    <application
+        android:name="${applicationName}"
+        android:label="tarea9y10"
+        android:icon="@mipmap/ic_launcher">
+        <!-- Add this meta-data tag -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBdxsaJ2W_VJdr-uyw_NdKtEtwb9RG891o"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="tarea9y10"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|uiMode"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.firebase.crashlytics.unity_version" android:value="0.0.0" />
+    </application>
+</manifest>
